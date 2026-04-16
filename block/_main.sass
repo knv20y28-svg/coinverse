@@ -1,0 +1,112 @@
+.main
+  position: relative
+  background: $background
+  background-image: url(../img/bg-main.png)
+  background-repeat: no-repeat
+  margin-bottom: 120px
+  z-index: 1
+  &::before
+    position: absolute
+    content: ''
+    background-image: url(../img/bg.png)
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+    opacity: 0.2
+
+  &-wrapper
+    position: relative
+    display: flex
+    justify-content: space-between
+
+  &-info
+    max-width: 690px
+    padding-top: 200px
+    padding-bottom: 250px
+
+  &-image
+    position: relative
+  &__img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+  &-title
+    font-family: Lato
+    font-size: 55px
+    font-style: normal
+    font-weight: 700
+    line-height: 65px
+    letter-spacing: 1.65px
+    margin-bottom: 15px
+    height: 195px
+    width: 690px
+    
+  &-text
+    font-family: Rubik
+    font-size: 16px
+    font-style: normal
+    font-weight: 300
+    line-height: 30px
+    width: 660px
+    color: $text2
+    margin-bottom: 25px
+    &:nth-child(6)
+      color: pink
+      font-size: 30px
+
+  &-currensy
+    position: absolute
+    top: 30px
+    left: -50px
+    width: 316px
+    border-radius: 10px
+    border: 1px solid #FFF
+    background: linear-gradient(260deg, #FFF -48.47%, rgba(255, 255, 255, 0.00) 156.24%)
+    backdrop-filter: blur(2.5px)
+    padding-top: 18px
+    padding-left: 18px
+    padding-right: 18px
+    &__line
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 18px
+      color: $text
+
+    &__rate
+      display: flex
+      align-items: center
+    &__text
+      display: flex
+      flex-direction: column
+      margin-left: 14px
+    &__name
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+    &__curr
+      font-size: 14px
+      font-style: normal
+      font-weight: 300
+      line-height: normal
+      color: #7A7A7A
+    &__price
+      display: flex
+      flex-direction: column
+    &__pricetag
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+    &__percentage
+      font-size: 14px
+      font-style: normal
+      font-weight: 300
+      line-height: normal
+      color: #00A055
+      &--red
+        color: #FF0909
